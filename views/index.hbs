@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>eBiblioteka</title>
+    <link rel='stylesheet' href='../style/index.css' />
+    <link rel='icon' href='../img/books.png' type='image/gif' sizes='16x16' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h1 id='title'>Elektronska biblioteka</h1>
+      <form action='search'>
+        <input
+          id='search-box'
+          placeholder='Unesite naslov knjige za pretragu'
+          type='search'
+          name='title'
+          minlength='3'
+          maxlength='100'
+          required
+        />
+        <input type='submit' value='Pretraga' class='btn' />
+      </form>
+      <div style='display: flex; flex-direction: row; margin: 10px 0;'>
+        <a href='add' class='btn' style='border-right: 1px solid white;'>Dodaj
+          novu knjigu</a>
+        <a href='/' class='btn' style='border-left: 1px solid white;'>Prikaži
+          sve</a>
+      </div>
+      {{#each books}}
+        <div class='container'>
+          <div class='product-details'>
+            <h1>{{this.title}}</h1>
+            <p class='information'>{{this.author}}</p>
+            <p class='information'>{{this.year}}</p>
+            <div class='control'>
+              <a
+                class='delete-btn'
+                style='color: #fff; text-decoration: none;'
+                href='delete?id={{this.id}}'
+              >Obriši</a>
+            </div>
+          </div>
+          <div class='product-image'>
+            <img src='{{this.cover}}' alt='Knjiga' />
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </body>
+</html>

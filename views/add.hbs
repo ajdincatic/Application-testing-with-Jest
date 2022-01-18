@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>eBiblioteka</title>
+    <link rel='stylesheet' href='../style/index.css' />
+    <link rel="icon" href="../img/books.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h1 id='title'>Elektronska biblioteka</h1>
+        <form id="add-form" enctype="multipart/form-data" method="POST" action="save">
+          <input type="text" placeholder="Naslov" name="title" required/>
+          <input type="text" placeholder="Autor" name="author" required/>
+          <input type="number" placeholder="Godina" name="year" required/>
+          <input type="file" accept="image/*" placeholder="Slika" name="cover" required/>
+          <input type="submit" value="Dodaj" class="btn"/>
+          <input type="reset" value="Resetiraj formu" class="btn"/>
+        </form>
+        <a href="/" class="btn" style="margin-top: 20px;
+    border-radius: 0;
+    padding: 20px;
+    width: 50%;
+    text-align: center;">Nazad</a>
+  </body>
+</html>

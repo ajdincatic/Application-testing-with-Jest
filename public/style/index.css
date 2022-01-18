@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/lib.jpg');
+  padding: 20px;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title {
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 25 0 20 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(70, 70, 163);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  color: white;
+  background-color: rgb(194, 61, 61);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+}
+
+.delete-btn:hover {
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+form .btn {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#search-box {
+  width: 25%;
+}
+
+input[type='file'] {
+  background-color: white;
+}
+
+.btn,
+input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#add-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-form input {
+  margin-top: 20px;
+  border-radius: 0;
+  padding: 20px;
+}
+
+/* theme */
+
+.container {
+  box-shadow: 0 7px 10px 1px grey;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px auto;
+  height: 200px;
+  width: 700px;
+}
+
+.container:first-child {
+  margin-top: 20px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100%;
+  float: left;
+  width: 70%;
+  overflow: hidden;
+}
+
+.container .product-details h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 2vh;
+  color: #344055;
+  text-align: left;
+  margin: 0;
+}
+
+.container .product-details p {
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.product-image {
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
